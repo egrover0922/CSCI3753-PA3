@@ -1,0 +1,12 @@
+multi_thread.c
+  This file contains a shared circular buffer called shared_buff sb. This file creates multiple
+  threads to address the consumer producer problem. The producer() function allows the producer 
+  threads to read from the data from input file into the shared_buff. The consumer() function
+  uses the consumer threads to read from the shared_buff, do a dns lookup on the hostname, 
+  and write the data into the results.txt file.
+  
+to run the program:
+  ./multi_thread #of_consumer_threads #of_producer_threads results.txt serviced.txt input/names1.txt
+  input/names2.txt input/names3.txt input/names4.txt input/names5.txt
+
+  
